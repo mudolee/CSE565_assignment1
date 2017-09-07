@@ -2,6 +2,11 @@ package assignment1;
 
 import java.util.ArrayList;
 
+/**
+ * Graph implementation, simple one having single undirected link between nodes
+ * @author Brad Lee
+ *
+ */
 public class Graph
 {
     private ArrayList<Node> nodes;

@@ -1,5 +1,10 @@
 package assignment1;
 
+/**
+ * Edge implementation contains two node reference and distance between them
+ * @author Brad Lee
+ *
+ */
 public class Edge
 {
     private Node srcNode, dstNode;
@@ -35,6 +40,12 @@ public class Edge
     {
         this.dstNode = dstNode;
     }
+    
+    /**
+     * returns the other ending node in this edge from the given node perspective
+     * @param node : node we are working on
+     * @return opposite node from current working node
+     */
     public Node getOtherEnd(Node node)
     {
         if (node == srcNode)

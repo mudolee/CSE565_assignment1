@@ -2,16 +2,30 @@ package assignment1;
 
 import java.util.ArrayList;
 
-//this is not generic, specific to usage from DijkstraAlgorithm class
+/**
+ * this is not generic node implementation.
+ * it contains methods and attributes for DijkstraAlgorithm algorithm use
+ * @author Brad Lee
+ *
+ */
 public class Node implements Comparable<Node>, BinHeapInfo
 {
+    // maximum length between nodes
     public static final int INFINITY = Integer.MAX_VALUE;
 
+    // unique id for each node
     private int id;
+    
+    // total distance from source to this node
     private int distance;
+    
+    // for trace back purpose to get the path detail
     private Node prevNode;
+    
+    // have a binary heap position of this node
     private int priorityQueueIndex;
 
+    // neighboring edges are in this list
     private ArrayList<Edge> edges;
 
     public Node(int id)
@@ -37,7 +51,7 @@ public class Node implements Comparable<Node>, BinHeapInfo
         return prevNode; 
     }
 
-    public void sePrevNode(Node node) 
+    public void setPrevNode(Node node) 
     { 
         this.prevNode = node; 
     }
@@ -64,6 +78,9 @@ public class Node implements Comparable<Node>, BinHeapInfo
         return priorityQueueIndex;   
     }
 
+    /**
+     * it compares total path length
+     */
     @Override
     public int compareTo(Node node)
     {

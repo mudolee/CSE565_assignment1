@@ -2,6 +2,13 @@ package assignment1;
 
 import java.util.*;
 
+/**
+ * Binary Heap implementation for minimum priority queue used in Dijkstra algorithm
+ * 
+ * @author Brad Lee
+ *
+ * @param E : generic, but two methods added for tracing back from Dijkstra network
+ */
 public class BinHeap<E extends Comparable< ? super E > & BinHeapInfo>
 {
     static final int INIT_CAPACITY = 64; // perfect tree of size 63
@@ -34,6 +41,10 @@ public class BinHeap<E extends Comparable< ? super E > & BinHeapInfo>
         makeEmpty();
     }
 
+    /**
+     * copy constructor but it's missing callback functions (set heap index)
+     * @param items : list of items to be copied
+     */
     public BinHeap(E[] items)
     {
         this(items.length);
@@ -51,6 +62,10 @@ public class BinHeap<E extends Comparable< ? super E > & BinHeapInfo>
 
     public boolean empty() { return mSize == 0; }
 
+    /**
+     * this is the only insertion method for new items
+     * @param x : item to be added to the heap
+     */
     public void insert(E x)
     {
         if (mSize == mCapacity - 1)
@@ -59,6 +74,10 @@ public class BinHeap<E extends Comparable< ? super E > & BinHeapInfo>
         percolateUp(++mSize, x);
     }
 
+    /**
+     * this will take out minimum item from the heap
+     * @return minimum value item, otherwise exception occurs
+     */
     public E remove()
     {
         E minObject;
@@ -74,6 +93,19 @@ public class BinHeap<E extends Comparable< ? super E > & BinHeapInfo>
         return minObject;
     }
 
+    /**
+     * value (priority) decrease, then adjust the new location of the item in the heap
+     * @param hole : index in the queue
+     * @param x : object of the item
+     */
+    public void decrease(int hole, E x)
+    {
+        if (hole <= mSize)
+        {
+            percolateUp(hole, x);
+        }
+    }
+
     public int size() { return mSize; }
 
     // private helper methods ------------------------------------
@@ -85,14 +117,11 @@ public class BinHeap<E extends Comparable< ? super E > & BinHeapInfo>
             percolateDown(k);
     }
     
-    public void decrease(int hole, E x)
-    {
-        if (hole <= mSize)
-        {
-            percolateUp(hole, x);
-        }
-    }
-
+    /**
+     * percolate up an item to find right location in the heap
+     * @param hole : index in the heap
+     * @param x : object of the item
+     */
     private void percolateUp(int hole, E x)
     { 
         for (; hole > 1 && x.compareTo(mArray[hole/2]) < 0; hole /= 2)
@@ -104,6 +133,10 @@ public class BinHeap<E extends Comparable< ? super E > & BinHeapInfo>
         x.setHeapIndex(hole);
     }
     
+    /**
+     * percolate down an item to find right location in the heap
+     * @param hole
+     */
     private void percolateDown(int hole)
     { 
         int child;
@@ -127,6 +160,9 @@ public class BinHeap<E extends Comparable< ? super E > & BinHeapInfo>
         mArray[hole].setHeapIndex(hole);
     }
 
+    /**
+     * automatic increase in size when insertion require mode space of the heap
+     */
     @SuppressWarnings("unchecked")
     private void doubleCapacity()
     {
