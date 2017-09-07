@@ -1,5 +1,7 @@
 package assignment1;
 
+import java.util.ArrayList;
+
 public class DijkstraAlgorithm
 {
     private BinHeap<Node> minQueue;
@@ -29,11 +31,11 @@ public class DijkstraAlgorithm
             if (minNode == dest)
                 return minNode.getDistance();
             
-            int edgeSize = minNode.getEdgeSize();
-            for (int i = 0; i < edgeSize; i++)
+            ArrayList<Edge> edges = minNode.getEdges();
+            for (Edge edge : edges)
             {
-                int newDistance = minNode.getEdgeLength(i) + minNode.getDistance();
-                Node neighbor = minNode.getEdgeOtherEnd(i);
+                int newDistance = edge.getLength() + minNode.getDistance();
+                Node neighbor = edge.getOtherEnd(minNode);
                 if (neighbor.getDistance() > newDistance)
                 {
                     neighbor.setDistance(newDistance);

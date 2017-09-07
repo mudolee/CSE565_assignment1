@@ -42,19 +42,9 @@ public class Node implements Comparable<Node>, BinHeapInfo
         this.prevNode = node; 
     }
 
-    public int getEdgeSize() 
+    public ArrayList<Edge> getEdges() 
     { 
-        return edges.size(); 
-    }
-
-    public int getEdgeLength(int index) 
-    { 
-        return edges.get(index).getLength(); 
-    }
-
-    public Node getEdgeOtherEnd(int index) 
-    { 
-        return edges.get(index).getOtherEnd(this); 
+        return edges; 
     }
 
     public void addEdge(Edge edge)
