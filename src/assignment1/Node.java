@@ -86,4 +86,9 @@ public class Node implements Comparable<Node>, BinHeapInfo
     {
         return Integer.compare(distance, node.distance);
     }
+    
+    @Override
+	public String toString() {
+		return "->" + id;
+	}
 }

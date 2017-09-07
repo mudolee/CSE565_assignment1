@@ -3,27 +3,44 @@ Distance = 2147483647
 Distance = 2147483647
 Distance = 2147483647
 Distance = 0
+->14
 Distance = 33
-Distance = 2147483647
+->2->7
 Distance = 87
+->1->2->4
+Distance = 2147483647
+->4
 Distance = 91
+->11->5->10->4
+Distance = 161
+->1->5->14->13->12->11->21->23->25->33->29->28->27->20->19
 PASSED: testEmptyNetwork
+        0 nodes, expects infinity
 PASSED: testOneNetworkSrcNull
+        1 nodes, source = null, expects infinity
 PASSED: testOneNetworkDestNull
+        1 nodes, destination = null, expects infinity
 PASSED: testOneNetwork
+        1 nodes, source = destination, expects 0
 PASSED: testTwoNetwork
-PASSED: testSmallDiscNetwork
+        2 nodes, connected, expects 33
 PASSED: testSmallNetwork
+        5 nodes, connected, expects 87
+PASSED: testSmallDiscNetwork
+        7 nodes, disconnected, expects infinity
 PASSED: testSmallMultiLinkNetwork
+        14 nodes, connected, expects 91
+PASSED: testCrowdedNetwork
+        33 nodes, connected, expects 161
 
 ===============================================
     Default test
-    Tests run: 8, Failures: 0, Skips: 0
+    Tests run: 9, Failures: 0, Skips: 0
 ===============================================
 
 
 ===============================================
 Default suite
-Total tests run: 8, Failures: 0, Skips: 0
+Total tests run: 9, Failures: 0, Skips: 0
 ===============================================
 

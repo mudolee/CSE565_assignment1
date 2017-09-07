@@ -5,7 +5,7 @@
     <classes>
       <class name="assignment1.TestNGDijkstraAlgorithm">
         <methods>
-          <include name="testSmallMultiLinkNetwork"/>
+          <include name="testCrowdedNetwork"/>
           <include name="prepTest"/>
         </methods>
       </class> <!-- assignment1.TestNGDijkstraAlgorithm -->

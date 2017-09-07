@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\brad\AppData\Local\Temp\testng-eclipse--638182914\testng-customsuite.xml</span>
+                    <span>C:\Users\v-joonle\AppData\Local\Temp\testng-eclipse-1281717019\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">9 methods,   9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="assignment1.TestNGDijkstraAlgorithm" hash-for-method="testCrowdedNetwork">testCrowdedNetwork</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="assignment1.TestNGDijkstraAlgorithm" hash-for-method="testEmptyNetwork">testEmptyNetwork</a> <!-- method navigator-link -->
@@ -160,9 +165,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="testCrowdedNetwork">
+                  </a> <!-- testCrowdedNetwork -->
+                  <span class="method-name">testCrowdedNetwork</span>
+                  <em>
+(33 nodes, connected, expects 161)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testEmptyNetwork">
                   </a> <!-- testEmptyNetwork -->
                   <span class="method-name">testEmptyNetwork</span>
+                  <em>
+(0 nodes, expects infinity)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -170,6 +186,8 @@
                   <a name="testOneNetwork">
                   </a> <!-- testOneNetwork -->
                   <span class="method-name">testOneNetwork</span>
+                  <em>
+(1 nodes, source = destination, expects 0)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -177,6 +195,8 @@
                   <a name="testOneNetworkDestNull">
                   </a> <!-- testOneNetworkDestNull -->
                   <span class="method-name">testOneNetworkDestNull</span>
+                  <em>
+(1 nodes, destination = null, expects infinity)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -184,6 +204,8 @@
                   <a name="testOneNetworkSrcNull">
                   </a> <!-- testOneNetworkSrcNull -->
                   <span class="method-name">testOneNetworkSrcNull</span>
+                  <em>
+(1 nodes, source = null, expects infinity)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -191,6 +213,8 @@
                   <a name="testSmallDiscNetwork">
                   </a> <!-- testSmallDiscNetwork -->
                   <span class="method-name">testSmallDiscNetwork</span>
+                  <em>
+(7 nodes, disconnected, expects infinity)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -198,6 +222,8 @@
                   <a name="testSmallMultiLinkNetwork">
                   </a> <!-- testSmallMultiLinkNetwork -->
                   <span class="method-name">testSmallMultiLinkNetwork</span>
+                  <em>
+(14 nodes, connected, expects 91)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -205,6 +231,8 @@
                   <a name="testSmallNetwork">
                   </a> <!-- testSmallNetwork -->
                   <span class="method-name">testSmallNetwork</span>
+                  <em>
+(5 nodes, connected, expects 87)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -212,6 +240,8 @@
                   <a name="testTwoNetwork">
                   </a> <!-- testTwoNetwork -->
                   <span class="method-name">testTwoNetwork</span>
+                  <em>
+(2 nodes, connected, expects 33)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,7 +249,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\brad\AppData\Local\Temp\testng-eclipse--638182914\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\v-joonle\AppData\Local\Temp\testng-eclipse-1281717019\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -268,44 +298,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testEmptyNetwork')
 data.setCell(0, 2, 'assignment1.TestNGDijkstraAlgorithm')
-data.setCell(0, 3, 7);
+data.setCell(0, 3, 5);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testSmallMultiLinkNetwork')
+data.setCell(1, 1, 'testTwoNetwork')
 data.setCell(1, 2, 'assignment1.TestNGDijkstraAlgorithm')
-data.setCell(1, 3, 5);
+data.setCell(1, 3, 2);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testOneNetworkSrcNull')
+data.setCell(2, 1, 'testOneNetwork')
 data.setCell(2, 2, 'assignment1.TestNGDijkstraAlgorithm')
-data.setCell(2, 3, 4);
+data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testTwoNetwork')
+data.setCell(3, 1, 'testSmallMultiLinkNetwork')
 data.setCell(3, 2, 'assignment1.TestNGDijkstraAlgorithm')
-data.setCell(3, 3, 4);
+data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testOneNetwork')
+data.setCell(4, 1, 'testCrowdedNetwork')
 data.setCell(4, 2, 'assignment1.TestNGDijkstraAlgorithm')
-data.setCell(4, 3, 3);
+data.setCell(4, 3, 1);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testOneNetworkDestNull')
+data.setCell(5, 1, 'testSmallDiscNetwork')
 data.setCell(5, 2, 'assignment1.TestNGDijkstraAlgorithm')
-data.setCell(5, 3, 2);
+data.setCell(5, 3, 1);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testSmallNetwork')
+data.setCell(6, 1, 'testOneNetworkDestNull')
 data.setCell(6, 2, 'assignment1.TestNGDijkstraAlgorithm')
 data.setCell(6, 3, 1);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testSmallDiscNetwork')
+data.setCell(7, 1, 'testSmallNetwork')
 data.setCell(7, 2, 'assignment1.TestNGDijkstraAlgorithm')
 data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testOneNetworkSrcNull')
+data.setCell(8, 2, 'assignment1.TestNGDijkstraAlgorithm')
+data.setCell(8, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 ms</span>
+              <span class="suite-total-time">Total running time: 14 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -338,63 +372,71 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testEmptyNetwork</span>
-                <span class="method-start">8 ms</span>
+                <span class="method-start">6 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">prepTest</span>
-                <span class="method-start">18 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testOneNetworkSrcNull</span>
-                <span class="method-start">18 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">prepTest</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-start">15 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testOneNetworkDestNull</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">prepTest</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testOneNetwork</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">prepTest</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTwoNetwork</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">prepTest</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSmallNetwork</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">prepTest</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSmallDiscNetwork</span>
                 <span class="method-start">24 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">prepTest</span>
-                <span class="method-start">28 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testOneNetwork</span>
-                <span class="method-start">28 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">prepTest</span>
-                <span class="method-start">34 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testTwoNetwork</span>
-                <span class="method-start">34 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">prepTest</span>
-                <span class="method-start">39 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testSmallDiscNetwork</span>
-                <span class="method-start">40 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">prepTest</span>
-                <span class="method-start">42 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testSmallNetwork</span>
-                <span class="method-start">43 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">prepTest</span>
-                <span class="method-start">46 ms</span>
+                <span class="method-start">26 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSmallMultiLinkNetwork</span>
-                <span class="method-start">46 ms</span>
+                <span class="method-start">26 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">prepTest</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCrowdedNetwork</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
