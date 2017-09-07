@@ -31,8 +31,7 @@ public class DijkstraAlgorithm
             if (minNode == dest)
                 return minNode.getDistance();
             
-            ArrayList<Edge> edges = minNode.getEdges();
-            for (Edge edge : edges)
+            for (Edge edge : minNode.getEdges())
             {
                 int newDistance = edge.getLength() + minNode.getDistance();
                 Node neighbor = edge.getOtherEnd(minNode);
