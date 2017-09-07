@@ -1,0 +1,29 @@
+[RemoteTestNG] detected TestNG version 6.12.0
+Distance = 2147483647
+Distance = 2147483647
+Distance = 2147483647
+Distance = 0
+Distance = 33
+Distance = 2147483647
+Distance = 87
+Distance = 91
+PASSED: testEmptyNetwork
+PASSED: testOneNetworkSrcNull
+PASSED: testOneNetworkDestNull
+PASSED: testOneNetwork
+PASSED: testTwoNetwork
+PASSED: testSmallDiscNetwork
+PASSED: testSmallNetwork
+PASSED: testSmallMultiLinkNetwork
+
+===============================================
+    Default test
+    Tests run: 8, Failures: 0, Skips: 0
+===============================================
+
+
+===============================================
+Default suite
+Total tests run: 8, Failures: 0, Skips: 0
+===============================================
+

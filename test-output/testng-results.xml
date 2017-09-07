@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="72" started-at="2017-09-07T11:35:30Z" finished-at="2017-09-07T11:35:30Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="72" started-at="2017-09-07T11:35:30Z" finished-at="2017-09-07T11:35:30Z">
+      <class name="assignment1.TestNGDijkstraAlgorithm">
+        <test-method status="PASS" signature="prepTest()[pri:0, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="prepTest" is-config="true" duration-ms="8" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepTest -->
+        <test-method status="PASS" signature="testEmptyNetwork()[pri:10, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="testEmptyNetwork" duration-ms="7" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyNetwork -->
+        <test-method status="PASS" signature="testOneNetworkSrcNull()[pri:15, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="testOneNetworkSrcNull" duration-ms="4" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOneNetworkSrcNull -->
+        <test-method status="PASS" signature="prepTest()[pri:0, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="prepTest" is-config="true" duration-ms="0" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepTest -->
+        <test-method status="PASS" signature="prepTest()[pri:0, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="prepTest" is-config="true" duration-ms="0" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepTest -->
+        <test-method status="PASS" signature="testOneNetworkDestNull()[pri:16, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="testOneNetworkDestNull" duration-ms="2" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOneNetworkDestNull -->
+        <test-method status="PASS" signature="testOneNetwork()[pri:20, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="testOneNetwork" duration-ms="3" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOneNetwork -->
+        <test-method status="PASS" signature="prepTest()[pri:0, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="prepTest" is-config="true" duration-ms="0" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepTest -->
+        <test-method status="PASS" signature="testTwoNetwork()[pri:30, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="testTwoNetwork" duration-ms="4" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTwoNetwork -->
+        <test-method status="PASS" signature="prepTest()[pri:0, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="prepTest" is-config="true" duration-ms="0" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepTest -->
+        <test-method status="PASS" signature="prepTest()[pri:0, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="prepTest" is-config="true" duration-ms="1" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepTest -->
+        <test-method status="PASS" signature="testSmallDiscNetwork()[pri:40, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="testSmallDiscNetwork" duration-ms="1" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSmallDiscNetwork -->
+        <test-method status="PASS" signature="prepTest()[pri:0, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="prepTest" is-config="true" duration-ms="1" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepTest -->
+        <test-method status="PASS" signature="testSmallNetwork()[pri:40, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="testSmallNetwork" duration-ms="1" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSmallNetwork -->
+        <test-method status="PASS" signature="prepTest()[pri:0, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="prepTest" is-config="true" duration-ms="0" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepTest -->
+        <test-method status="PASS" signature="testSmallMultiLinkNetwork()[pri:50, instance:assignment1.TestNGDijkstraAlgorithm@fc185]" name="testSmallMultiLinkNetwork" duration-ms="5" started-at="2017-09-07T04:35:30Z" finished-at="2017-09-07T04:35:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSmallMultiLinkNetwork -->
+      </class> <!-- assignment1.TestNGDijkstraAlgorithm -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
